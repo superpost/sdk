@@ -33,4 +33,4 @@ jobs:
         run: bun test
       
       - name: Publish to NPM
-        run: bun publish --provenance --access public
+        run: npm publish --provenance --access public
