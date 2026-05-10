@@ -1,7 +1,7 @@
 {
   "name": "@superpost/sdk",
   "type": "module",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "SuperPost SDK for TS/JS",
   "author": "SuperPost <hello@superpost.dev>",
   "license": "MIT",
