@@ -1,0 +1,44 @@
+{
+  "name": "@superpost/sdk",
+  "type": "module",
+  "version": "1.0.0",
+  "description": "SuperPost SDK for TS/JS",
+  "author": "SuperPost <hello@superpost.dev>",
+  "license": "MIT",
+  "homepage": "https://superpost.dev",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/superpost/sdk.git"
+  },
+  "bugs": {
+    "url": "https://github.com/superpost/sdk/issues"
+  },
+  "exports": {
+    ".": {
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.cjs"
+    },
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsdown",
+    "dev": "tsdown --watch",
+    "test": "vitest",
+    "typecheck": "tsc --noEmit",
+    "release": "bumpp",
+    "prepublishOnly": "bun run build"
+  },
+  "devDependencies": {
+    "@types/node": "^25.6.2",
+    "bumpp": "^11.1.0",
+    "tsdown": "^0.22.0",
+    "typescript": "^6.0.3",
+    "vitest": "^4.1.5"
+  },
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.cts"
+}
